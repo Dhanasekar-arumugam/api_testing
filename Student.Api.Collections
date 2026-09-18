@@ -1,0 +1,148 @@
+{
+  "info": {
+    "_postman_id": "0fc72a51-4a68-4461-ae6b-0c4624a40603",
+    "name": "Student",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "55327256",
+    "_collection_link": "https://go.postman.co/collection/55327256-0fc72a51-4a68-4461-ae6b-0c4624a40603?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "get_stud",
+      "protocolProfileBehavior": {
+        "disableBodyPruning": true
+      },
+      "request": {
+        "method": "GET",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/app1/employee/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "app1",
+            "employee",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "post_std",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "\r\n{\r\n    \"employee_id\": 5,\r\n    \"first_name\": \"Sanjai\",\r\n    \"last_name\": \"Kumar\",\r\n    \"salary\": 600000,\r\n    \"manager_id\": 104,\r\n    \"hire_date\": \"2024-05-22\",\r\n    \"department_id\": 22\r\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/app1/employee/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "app1",
+            "employee",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "update_std",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\r\n        \"employee_id\": 101,\r\n        \"first_name\": \"Dhanasekar\",\r\n        \"last_name\": \"A\",\r\n        \"salary\": \"30000.00\",\r\n        \"manager_id\": 100001,\r\n        \"hire_date\": \"2004-04-20\",\r\n        \"department_id\": 10003,\r\n        \"created_at\": \"2026-09-15T14:11:23.660897Z\"\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/app1/employee/101/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "app1",
+            "employee",
+            "101",
+            ""
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "delet_std",
+      "request": {
+        "method": "DELETE",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "    {\r\n        \"employee_id\": 5,\r\n        \"first_name\": \"Sanjai\",\r\n        \"last_name\": \"Kumar\",\r\n        \"salary\": \"600000.00\",\r\n        \"manager_id\": 104,\r\n        \"hire_date\": \"2024-05-22\",\r\n        \"department_id\": 22,\r\n        \"created_at\": \"2026-09-18T06:46:48.854990Z\"\r\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://127.0.0.1:8000/app1/employee/5/",
+          "protocol": "http",
+          "host": [
+            "127",
+            "0",
+            "0",
+            "1"
+          ],
+          "port": "8000",
+          "path": [
+            "app1",
+            "employee",
+            "5",
+            ""
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}
